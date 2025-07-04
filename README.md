@@ -1,7 +1,7 @@
 <div align="center">
   <h1>SVPLAN</h1>
   <h2>Swept Volume-Aware Trajectory Planning and MPC Tracking for Multi-Axle AMRs</h2>
-  <p><strong>This work is available on <i>arXiv</i>.</strong></p>
+  <p><strong>This work is accpeted in <i>ICRA 2025</i>.</strong></p>
   <br>
 
   [![Code](https://img.shields.io/badge/Code-GitHub-blue?logo=github)](https://github.com/ccwss-maker/svplan)
