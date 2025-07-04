@@ -164,7 +164,7 @@ ros2 run control_mpc control_mpc
 If you find this work helpful, please cite:
 ```bibtex
 @inproceedings{huswept2024,
-  author       = {Hu, Tianxin and Yuan, Shenghai and Bai, Ruofei and Xu, Xinghang},
+  author       = {Hu, Tianxin and Yuan, Shenghai and Bai, Ruofei and Xu, Xinghang and Liao, Yuwen and Liu, Fen and Xie, Lihua},
   booktitle    = {Proceedings of the 2025 IEEE International Conference on Robotics and Automation (ICRA)},
   title        = {Swept Volume-Aware Trajectory Planning and MPC Tracking for Multi-Axle Swerve-Drive AMRs},
   year         = {2025},
