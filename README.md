@@ -155,9 +155,6 @@ ros2 launch multi_axle_vehicle_model car.launch.py
 ros2 run route_planning route_planning
 ros2 run control_mpc control_mpc
 ```
-![Simulation Result](images/1.jpg)
-![Simulation Result](images/2.jpg)
-
 
 ## 🐳 Run with Docker
 ------------
@@ -195,6 +192,9 @@ ros2 run route_planning route_planning
 # Terminal 3
 ros2 run control_mpc control_mpc
 ```
+
+![Simulation Result](images/1.jpg)
+![Simulation Result](images/2.jpg)
 
 ## 📄 Citation
 --------
