@@ -103,7 +103,8 @@ git clone https://github.com/ccwss-maker/svplan.git
 
 2. Copy Gazebo models:
 ```bash
-cp -r svplan/multi_axle_vehicle_model/worlds/models/ ~/.gazebo/
+mkdir -p ~/.gazebo
+cp -rT svplan/multi_axle_vehicle_model/worlds/models ~/.gazebo/models
 ```
 
 3. Manually update the `config_yaml_path` in the following 5 source files:
@@ -115,14 +116,14 @@ src/svplan/route_planning/src/TrajectoryOpimizationNode.cpp
 src/svplan/route_planning/src/SDFOpimizationNode.cpp
 
 // Replace with your actual path:
-config_yaml_path = "/absolute/path/to/your/multi-axle-all-wheel-steering-vehicles_ws/src/route_planning/config/route_planning_config.yaml";
+config_yaml_path = "/absolute/path/to/your/multi-axle-all-wheel-steering-vehicles_ws/src/svplan/route_planning/config/route_planning_config.yaml";
 
 // For the MPC control module
 src/svplan/control_mpc/src/Control_MPC.cpp
 src/svplan/control_mpc/src/MPC.cpp
 
 // Replace with your actual path:
-config_yaml_path = "/absolute/path/to/your/multi-axle-all-wheel-steering-vehicles_ws/src/control_mpc/config/size.yaml";
+config_yaml_path = "/absolute/path/to/your/multi-axle-all-wheel-steering-vehicles_ws/src/svplan/control_mpc/config/size.yaml";
 ```
 
 4. Also update the plugin path in the following xacro file:
