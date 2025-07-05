@@ -78,7 +78,7 @@ cd ../..
 
 Install PCL v1.14.0:
 ```bash
-sudo apt-get install libflann-dev libusb-1.0-0-dev libopenni-dev libopenni2-dev libboost-all-dev libeigen3-dev clang-format libqhull-dev libpcap-dev freeglut3-dev libpng-dev libglew-dev
+sudo apt install -y libflann-dev libusb-1.0-0-dev libopenni-dev libopenni2-dev libboost-all-dev libeigen3-dev clang-format libqhull-dev libpcap-dev freeglut3-dev libpng-dev libglew-dev
 git clone --branch pcl-1.14.0 https://github.com/PointCloudLibrary/pcl.git
 cd pcl && mkdir build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
