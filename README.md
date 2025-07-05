@@ -30,8 +30,10 @@ arXiv:2412.16875v2
 - LBFGSpp v0.4.0
 - PCL v1.14.0
 
-## 📦 Dependencies
-------------
+## 🛠 Local Build Instructions
+------------------
+
+### 📦 Dependencies
 
 Install required ROS 2 packages:
 
@@ -91,8 +93,7 @@ Add to .bashrc:
 echo 'export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH' >> ~/.bashrc
 ```
 
-## 🛠 Build Instructions
-------------------
+### 🔧 Build Steps
 
 1. Create workspace and clone code:
 ```bash
@@ -147,18 +148,8 @@ echo "source ~/multi-axle-all-wheel-steering-vehicles_ws/install/setup.bash" >> 
 source ~/.bashrc
 ```
 
-## 🛠 Launch & Run
+## 🐳 Docker Instructions
 ------------
-
-```bash
-ros2 launch multi_axle_vehicle_model car.launch.py
-ros2 run route_planning route_planning
-ros2 run control_mpc control_mpc
-```
-
-## 🐳 Run with Docker
-------------
-Alternatively, you can run the entire system inside a Docker container:
 
 1. Pull and start the container with GUI support:
 
@@ -222,5 +213,3 @@ We sincerely thank the authors for their open-source contributions.
 
 ## 📜 License
 This project is released under the [MIT License](LICENSE).
-
----
