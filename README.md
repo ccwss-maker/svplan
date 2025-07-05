@@ -159,6 +159,43 @@ ros2 run control_mpc control_mpc
 ![Simulation Result](images/2.jpg)
 
 
+## 🐳 Run with Docker
+------------
+Alternatively, you can run the entire system inside a Docker container:
+
+1. Pull and start the container with GUI support:
+
+```bash
+xhost +local:root
+docker pull ccwssplus/svplan:latest
+docker run -it --gpus all \
+  --env="DISPLAY=$DISPLAY" \
+  --env="QT_X11_NO_MITSHM=1" \
+  -v /tmp/.X11-unix:/tmp/.X11-unix \
+  --name svplan \
+  ccwssplus/svplan:latest \
+  bash
+```
+
+2. Open two additional terminals and enter the same container:
+```bash
+docker exec -it svplan bash
+```
+
+3. In the three terminals, respectively run:
+```bash
+# Terminal 1
+ros2 launch multi_axle_vehicle_model car.launch.py
+```
+```bash
+# Terminal 2
+ros2 run route_planning route_planning
+```
+```bash
+# Terminal 3
+ros2 run control_mpc control_mpc
+```
+
 ## 📄 Citation
 --------
 
