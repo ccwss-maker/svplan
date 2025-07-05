@@ -36,7 +36,7 @@ arXiv:2412.16875v2
 Install required ROS 2 packages:
 
 ```bash
-sudo apt install ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-controller-manager ros-humble-xacro ros-humble-gazebo-ros-pkgs ros-humble-gazebo-ros2-control wget
+sudo apt install -y ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-controller-manager ros-humble-xacro ros-humble-gazebo-ros-pkgs ros-humble-gazebo-ros2-control wget git
 ```
 
 To install third-party libraries manually (skip if already installed):
